@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Huntly Street flat showcase with a clear floorplan-led overview, room notes, photo guidance, and viewing details."
+    />
+    <title>Huntly Street Flat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Huntly Street Flat home">
+        <span class="brand__mark" aria-hidden="true">H</span>
+        <span>Huntly Street Flat</span>
+      </a>
+      <nav class="site-nav" aria-label="Main sections">
+        <a href="#layout">Layout</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#photos">Photos</a>
+        <a href="#viewing">Viewing</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="kicker">Flat showcase</p>
+          <h1>A floorplan-first page for presenting the Huntly Street flat clearly.</h1>
+          <p class="hero__intro">
+            This version is intentionally static for GitHub Pages: no build tools, no framework,
+            and no local server needed once it is published. It is structured around the layout you
+            shared, with space for final photos, dimensions, copy, and contact details.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="button button--primary" href="#layout">View the layout</a>
+            <a class="button button--ghost" href="#viewing">Viewing details</a>
+          </div>
+        </div>
+
+        <aside class="summary-card" aria-label="Flat summary">
+          <p class="summary-card__label">At a glance</p>
+          <dl>
+            <div>
+              <dt>Main rooms</dt>
+              <dd>Living room, bedroom, kitchen, bathroom, and flexible second room.</dd>
+            </div>
+            <div>
+              <dt>Useful extras</dt>
+              <dd>Central hall, storage, and a small cupboard/utility run from the plan.</dd>
+            </div>
+            <div>
+              <dt>Best next edit</dt>
+              <dd>Add real room photos and exact dimensions when you have the final exports.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="layout" class="section section--layout" aria-labelledby="layout-title">
+        <div class="section__heading">
+          <p class="kicker">Layout</p>
+          <h2 id="layout-title">A clear overview before people scroll through the details.</h2>
+          <p>
+            The diagram below is a clean web recreation of the supplied floorplan. It keeps the
+            important relationships visible: bedroom and flexible room at the top, kitchen and living
+            room below, with bathroom, hall, storage, and cupboard spaces in the middle.
+          </p>
+        </div>
+
+        <div class="plan-panel">
+          <div class="floorplan" role="img" aria-label="Stylised floorplan of the Huntly Street flat">
+            <div class="room room--bedroom">
+              <span>Bedroom</span>
+              <small>Quiet sleeping space</small>
+            </div>
+            <div class="room room--flex">
+              <span>Flexible room</span>
+              <small>Study · guest · dressing</small>
+            </div>
+            <div class="room room--bathroom">
+              <span>Bathroom</span>
+              <small>Bath and fittings</small>
+            </div>
+            <div class="room room--hall">
+              <span>Hall</span>
+              <small>Connects the flat</small>
+            </div>
+            <div class="room room--storage">
+              <span>Store</span>
+              <small>Built-in storage</small>
+            </div>
+            <div class="room room--kitchen">
+              <span>Kitchen</span>
+              <small>Separate cooking area</small>
+            </div>
+            <div class="room room--living">
+              <span>Living room</span>
+              <small>Main reception space</small>
+            </div>
+            <div class="room room--cupboard">
+              <span>Cupboard</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rooms" class="section section--rooms" aria-labelledby="rooms-title">
+        <div class="section__heading section__heading--narrow">
+          <p class="kicker">Rooms</p>
+          <h2 id="rooms-title">Short, practical notes that help viewers understand the flat.</h2>
+        </div>
+
+        <div class="room-list">
+          <article>
+            <span class="room-list__number">01</span>
+            <h3>Living room</h3>
+            <p>
+              The largest room on the plan, suitable for a sofa area, media unit, dining table, and
+              freestanding storage without making the space feel over-described.
+            </p>
+          </article>
+          <article>
+            <span class="room-list__number">02</span>
+            <h3>Bedroom</h3>
+            <p>
+              A straightforward bedroom shape that should be easy to photograph and easy for viewers
+              to imagine with a full bed and wardrobes.
+            </p>
+          </article>
+          <article>
+            <span class="room-list__number">03</span>
+            <h3>Flexible room</h3>
+            <p>
+              Use this as the differentiator: home office, occasional guest room, dressing room, or
+              creative workspace depending on the audience.
+            </p>
+          </article>
+          <article>
+            <span class="room-list__number">04</span>
+            <h3>Kitchen and bathroom</h3>
+            <p>
+              Keep these sections factual: appliances, worktop/storage notes, ventilation, fittings,
+              water pressure, and any recent maintenance or upgrades.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="photos" class="section section--photos" aria-labelledby="photos-title">
+        <div class="section__heading">
+          <p class="kicker">Photos</p>
+          <h2 id="photos-title">Drop in the real images when they are ready.</h2>
+          <p>
+            These blocks are placeholders only. Save your final images into an `assets/` folder and
+            replace each block with an image tag using the same captions.
+          </p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-card photo-card--large">
+            <div aria-hidden="true">Living room image</div>
+            <figcaption>Wide shot of the main living space.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <div aria-hidden="true">Bedroom image</div>
+            <figcaption>Bedroom from the doorway and window side.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <div aria-hidden="true">Kitchen image</div>
+            <figcaption>Worktops, appliances, and storage.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <div aria-hidden="true">Bathroom image</div>
+            <figcaption>Bathroom fixtures and condition.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <div aria-hidden="true">Flexible room image</div>
+            <figcaption>Show the room as a study or guest room.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="viewing" class="section viewing" aria-labelledby="viewing-title">
+        <div>
+          <p class="kicker">Viewing</p>
+          <h2 id="viewing-title">Ready for the final viewing information.</h2>
+          <p>
+            Replace the placeholder email and notes with your preferred contact method, availability,
+            pricing or rental terms, and any eligibility requirements you want visitors to know first.
+          </p>
+        </div>
+        <a class="button button--primary" href="mailto:hello@example.com?subject=Huntly%20Street%20flat%20viewing">
+          Email about a viewing
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Huntly Street Flat · Static GitHub Pages showcase</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
