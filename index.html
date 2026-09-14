@@ -1,186 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A calm, practical flat showcase with room highlights, floorplan overview, location notes, and viewing details."
-    />
-    <title>Huntly Street Flat</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Huntly Street Flat home">
-        <span class="brand-mark">HS</span>
-        <span>Huntly Street Flat</span>
-      </a>
-      <nav class="nav-links" aria-label="Page sections">
-        <a href="#spaces">Spaces</a>
-        <a href="#floorplan">Floorplan</a>
-        <a href="#details">Details</a>
-        <a href="#viewing">Viewing</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Two-bedroom ground-floor flat in Aberdeen city centre, lightly furnished and ready to make your own." />
+  <title>Huntly Street · 2 bedroom flat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">HS</span><span>Huntly Street</span></a>
+    <nav class="nav-links">
+      <a href="#fit">Your fit</a><a href="#spaces">Spaces</a><a href="#details">Details</a><a href="#viewing">Viewing</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">Bright city flat · Ready for viewings</p>
-          <h1>A well-planned flat with generous living space and practical storage.</h1>
-          <p class="hero-text">
-            Use this GitHub Pages site as a polished home for photos, room notes, the floorplan,
-            and viewing information. Replace the placeholder copy with your final listing details.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#viewing">Arrange a viewing</a>
-            <a class="button button-secondary" href="#floorplan">See the layout</a>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="Flat quick facts">
-          <p class="card-label">At a glance</p>
-          <dl class="quick-facts">
-            <div>
-              <dt>Layout</dt>
-              <dd>Bedroom, bathroom, kitchen, living room, flexible room, storage</dd>
-            </div>
-            <div>
-              <dt>Best for</dt>
-              <dd>Singles, couples, remote work, guests</dd>
-            </div>
-            <div>
-              <dt>Showcase</dt>
-              <dd>Photos, floorplan, highlights, local notes</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">2 bedrooms · Ground floor · Aberdeen city centre</p>
+        <h1 id="hero-title">A home you can make your own.</h1>
+        <p class="hero-text" id="hero-text">A practical two-bedroom flat that is lightly furnished rather than filled with someone else’s furniture, with useful storage, off-street parking and full-fibre broadband availability.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#fit">Find your fit</a><a class="button button-secondary" href="#details">Just show me the flat</a></div>
+      </div>
+      <aside class="hero-card">
+        <p class="card-label">At a glance</p>
+        <dl class="quick-facts">
+          <div><dt>Rent</dt><dd>£750 pcm</dd></div>
+          <div><dt>Deposit</dt><dd>£750</dd></div>
+          <div><dt>Parking</dt><dd>Shared off-street parking, first come first served</dd></div>
+          <div><dt>Broadband</dt><dd>Full fibre available; packages advertised up to around 2.5 Gbps</dd></div>
+        </dl>
+      </aside>
+    </section>
 
-      <section class="photo-strip" aria-label="Photo placeholders">
-        <div class="photo-card photo-card-large">
-          <span>Living room photo</span>
-        </div>
-        <div class="photo-card">
-          <span>Bedroom photo</span>
-        </div>
-        <div class="photo-card">
-          <span>Kitchen photo</span>
-        </div>
-      </section>
+    <section id="fit" class="section-shell selector-section">
+      <div class="section-heading"><p class="eyebrow">Make the listing relevant to you</p><h2>What do you need from your next home?</h2><p>Choose the option closest to what matters now. The flat stays the same; we change what we show you first.</p></div>
+      <div class="selector-grid" role="group" aria-label="Choose what matters most">
+        <button class="selector-card active" data-mode="own"><strong>Make it my own</strong><span>Bring your own furniture and decide what the second room becomes.</span></button>
+        <button class="selector-card" data-mode="work"><strong>Work from home</strong><span>Keep work out of your living room with a separate second room.</span></button>
+        <button class="selector-card" data-mode="two"><strong>Home for two</strong><span>Main bedroom, flexible second room and generous shared living space.</span></button>
+        <button class="selector-card" data-mode="family"><strong>Bedroom for my child</strong><span>Two separate bedrooms, bath and practical ground-floor living.</span></button>
+        <button class="selector-card" data-mode="relocate"><strong>Moving to Aberdeen</strong><span>Parking, appliances and strong broadband options help make moving simpler.</span></button>
+        <button class="selector-card" data-mode="downsize"><strong>Downsizing</strong><span>Ground-floor living without giving up a useful spare room.</span></button>
+        <button class="selector-card" data-mode="share"><strong>Sharing</strong><span>Two real bedrooms plus a separate shared living room.</span></button>
+        <button class="selector-card" data-mode="neutral"><strong>Just show me the flat</strong><span>See the practical details without tailoring.</span></button>
+      </div>
+      <div class="perspective">Viewing this flat for: <strong id="mode-label">Making it my own</strong></div>
+    </section>
 
-      <section id="spaces" class="section-shell split-section">
-        <div>
-          <p class="eyebrow">Room-by-room</p>
-          <h2>Built around easy everyday living.</h2>
-          <p>
-            The layout separates quieter sleeping space from the main living area, with a kitchen,
-            bathroom, hallway, and useful smaller spaces grouped around the centre of the flat.
-          </p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Living room</h3>
-            <p>Large principal room with space for seating, dining, media, and display furniture.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Bedroom</h3>
-            <p>Comfortable double-bedroom proportions with a simple, furniture-friendly shape.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Kitchen</h3>
-            <p>Separate cooking area ready to highlight worktop space, storage, and appliances.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Flexible room</h3>
-            <p>Ideal as a study, guest space, dressing area, nursery, or hobby room.</p>
-          </article>
-        </div>
-      </section>
+    <section class="section-shell personalised-panel">
+      <div><p class="eyebrow">Why it may fit</p><h2 id="benefit-title">Space for your own things, not someone else’s.</h2><p id="benefit-copy">The flat is deliberately lightly furnished. Bedroom 1 has a bed and substantial fitted storage; Bedroom 2 is left empty so you can choose how to use it.</p></div>
+      <ul id="benefit-list" class="benefit-list">
+        <li>Empty second bedroom ready for your furniture</li><li>Dining table and chairs included</li><li>Kitchen appliances already supplied</li><li>Built-in wardrobes in Bedroom 1</li>
+      </ul>
+    </section>
 
-      <section id="floorplan" class="section-shell floorplan-section">
-        <div class="section-heading">
-          <p class="eyebrow">Floorplan</p>
-          <h2>Simple layout overview</h2>
-          <p>
-            This editable diagram mirrors the uploaded plan at a high level. Swap it for your final
-            floorplan image when you have a clean export.
-          </p>
-        </div>
-        <div class="floorplan-card">
-          <div class="floorplan" role="img" aria-label="Stylised flat floorplan">
-            <div class="room bedroom">Bedroom</div>
-            <div class="room flex">Flexible room</div>
-            <div class="room bath">Bathroom</div>
-            <div class="room hall">Hall</div>
-            <div class="room store">Store</div>
-            <div class="room kitchen">Kitchen</div>
-            <div class="room living">Living room</div>
-            <div class="room cupboard">Cupboard</div>
-          </div>
-        </div>
-      </section>
+    <section id="spaces" class="section-shell spaces-section">
+      <div class="section-heading"><p class="eyebrow">Room by room</p><h2>Two proper bedrooms and a generous living room.</h2></div>
+      <div id="room-grid" class="room-grid">
+        <article class="room-card" data-room="bed2"><span class="room-kicker">Flexible room</span><h3>Bedroom 2</h3><p>Approx. 3.76 × 2.66 m. Empty and ready to become a bedroom, office, guest room or hobby space. Underfloor heating.</p></article>
+        <article class="room-card" data-room="living"><span class="room-kicker">Main living space</span><h3>Living room</h3><p>Approx. 4.86 × 3.77 m. Dining table and chairs included, with plenty of room left for your own seating and media furniture. Electric heater and Aqara smart ceiling light.</p></article>
+        <article class="room-card" data-room="bed1"><span class="room-kicker">Main bedroom</span><h3>Bedroom 1</h3><p>Approx. 3.95 × 2.55 m. Bed included, underfloor heating and substantial fitted wardrobes with hanging space, shelving and drawers.</p></article>
+        <article class="room-card" data-room="kitchen"><span class="room-kicker">Separate kitchen</span><h3>Kitchen</h3><p>Approx. 3.36 × 2.64 m. Oven, hob, fridge-freezer, washing machine, microwave and tumble dryer included.</p></article>
+        <article class="room-card" data-room="bath"><span class="room-kicker">Bathroom</span><h3>Bathroom</h3><p>Approx. 2.26 × 1.68 m, with bath and shower plus electric heating.</p></article>
+      </div>
+    </section>
 
-      <section id="details" class="section-shell details-section">
-        <div class="section-heading">
-          <p class="eyebrow">Listing details</p>
-          <h2>Everything a viewer needs in one place.</h2>
-        </div>
-        <div class="details-grid">
-          <article>
-            <h3>Highlights</h3>
-            <ul>
-              <li>Generous living room with flexible furniture options</li>
-              <li>Separate kitchen and bathroom</li>
-              <li>Additional flexible room for working from home or guests</li>
-              <li>Useful hallway and storage spaces</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Photo checklist</h3>
-            <ul>
-              <li>Wide shot from each room entrance</li>
-              <li>Window, light, and outlook photos</li>
-              <li>Storage, appliances, and bathroom fixtures</li>
-              <li>Building entrance and nearby street context</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Location notes</h3>
-            <p>
-              Add nearby transport, shops, parks, universities, hospitals, or neighbourhood benefits
-              that make the flat easy to understand before a viewing.
-            </p>
-          </article>
-        </div>
-      </section>
+    <section id="details" class="section-shell details-section">
+      <div class="section-heading"><p class="eyebrow">Practical details</p><h2>The things you normally have to hunt for in a listing.</h2></div>
+      <div class="details-grid">
+        <article><h3>Comfort</h3><ul><li>Ground-floor flat</li><li>Double-glazed, lockable windows</li><li>Underfloor heating in both bedrooms and hallway</li><li>Electric heating in living room and bathroom</li></ul></article>
+        <article><h3>Storage & furnishing</h3><ul><li>Large fitted wardrobes in Bedroom 1</li><li>Boiler-cupboard storage</li><li>One bed included</li><li>Dining table and chairs included</li><li>Bedroom 2 intentionally left unfurnished</li></ul></article>
+        <article><h3>Building & parking</h3><ul><li>Secure communal entry with intercom</li><li>Around 18–20 shared off-street spaces</li><li>Parking is first come first served</li><li>No private garden or dedicated drying area</li></ul></article>
+        <article><h3>Connectivity</h3><ul><li>Full-fibre broadband available</li><li>Packages advertised up to around 2.5 Gbps at the address</li><li>Provider availability and speeds should be checked before ordering</li><li>Aqara smart light gives a starting point for home automation</li></ul></article>
+        <article><h3>Costs</h3><ul><li>Rent: £750 pcm</li><li>Deposit: £750</li><li>Council Tax Band D</li><li>Landlord pays factoring/common-area charges</li><li>Tenant responsible for utilities and council tax</li></ul></article>
+        <article><h3>Application</h3><ul><li>References required</li><li>Affordability checks required</li><li>Available immediately</li><li>Viewing recommended to see how the layout works for you</li></ul></article>
+      </div>
+    </section>
 
-      <section id="viewing" class="section-shell cta-section">
-        <div>
-          <p class="eyebrow">Next step</p>
-          <h2>Make it easy to arrange a viewing.</h2>
-          <p>
-            Replace the email address below with your preferred contact method, then publish the
-            repository through GitHub Pages.
-          </p>
-        </div>
-        <a class="button button-primary" href="mailto:hello@example.com?subject=Huntly%20Street%20Flat%20Viewing">
-          Email about a viewing
-        </a>
-      </section>
-    </main>
+    <section class="section-shell honest-section">
+      <div><p class="eyebrow">A straightforward listing</p><h2>Good fit — and the trade-offs.</h2></div>
+      <div class="honest-grid"><article><h3>Likely a good fit if…</h3><ul id="good-fit"><li>You want two bedrooms without a large property to maintain</li><li>You want to bring your own furniture</li><li>You value strong broadband and off-street parking</li></ul></article><article><h3>Probably less ideal if…</h3><ul id="less-fit"><li>You need a private garden</li><li>You need guaranteed allocated parking</li><li>You need three or more bedrooms</li></ul></article></div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Huntly Street Flat. Built for GitHub Pages.</p>
-      <a href="#top">Back to top</a>
-    </footer>
+    <section id="viewing" class="section-shell cta-section">
+      <div><p class="eyebrow">Next step</p><h2>See whether the space works for you.</h2><p>The flat is best understood in person: two usable bedrooms, a large living room and enough flexibility to furnish it around your own life.</p></div>
+      <a class="button button-primary" href="#top">Back to overview</a>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer"><p>© <span id="year"></span> Huntly Street Flat · Aberdeen</p><a href="#top">Back to top</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
